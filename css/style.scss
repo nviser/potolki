@@ -1,14 +1,9 @@
 @import "fonts.scss";
 
+$blue: #0068ba;
 $yellow: #ffdf4a;
-/* @mixin pressed {
-    background-color: #666666;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-} */
+$grey: #474747;
+
  @mixin pressed {
             text-transform: uppercase;
             margin-bottom: 0;
@@ -20,7 +15,7 @@ $yellow: #ffdf4a;
             border-bottom: 4px solid  #dfc137;
         } 
 
-html, body {
+html, body, ul {
     padding: 0;
     margin: 0;
 }
@@ -36,9 +31,11 @@ button {
     font-size: 18px
 }
 header {
+    background: $blue;
     nav {
-        background-color: #0068ba;
         overflow: hidden;
+        max-width: 1200px;
+        margin: 0 auto; 
         ul  {
             li {
                 float: left;
@@ -75,7 +72,10 @@ header {
             color: #fefefe;      
         }
         .header__main-panel {
-            float: left;
+            float: right;
+            display: flex;
+            align-items: center;
+            height: 40px;
             .header__main-panel-item {
                 float: left;  
                 width: 30px;
@@ -105,11 +105,12 @@ header {
     } /* nav end */
     .header__logo {
         box-shadow: 0px 1px 3px #000;
-        padding: 30px 0 30px;
+        padding: 20px 0 10px;
+        background: #ffffff;
         .header__logo-wrap {
             display: flex;
-            justify-content: center;
-            width: 90%;
+            justify-content: space-between;
+            max-width: 1200px;
             margin: 0 auto;
             .header__logo-item {
                 width: 22.5%;
@@ -117,6 +118,9 @@ header {
                 justify-content: center;
                 align-items: center;
                 font-size: 26px;
+                .header__logo-item-wrap {
+                    width: 100%;
+                }
                 .header__logo-item-top {
                     span {
                         text-transform: uppercase;
@@ -127,7 +131,6 @@ header {
                     font-family: "RobotoLight", sans-serif;
                 }
                 &:first-child {
-                    display: block;
                     padding-left: 90px;
                     background-image: url(../img/logo.png);
                     background-repeat: no-repeat;
@@ -172,7 +175,24 @@ header {
                     }
                 }
                 &:last-child {
-                    width: 16%;
+                    width: 17%;
+                    display: block;
+                    button {
+                        width: 100%;
+                    }
+                }
+                .header__block-item-schedule {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 14px;
+                    padding: 10px 0 10px 20px;
+                    background-image: url(../img/clock.png);
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                    background-size: 21px;
+                    font-family: "RobotoLight", sans-serif;
+                    font-size: 14px;
+                    box-sizing: border-box;
                 }
             }
         }
@@ -182,7 +202,7 @@ header {
 /* -------- slider --------- */
 .slider {
     background-image: url(../img/ceil1.jpg);
-    height: 250px;
+    height: 400px;
     background-size: 100%;
     position: relative;
     .slider__inner {
@@ -293,7 +313,7 @@ header {
 
 /* ---------- third section ----------- */
 .third__section {
-    background-image: url(../img/bg-room.jpg);
+    background-image: url(../img/bg3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     .wrapper {
@@ -302,7 +322,7 @@ header {
         display: flex;
         justify-content: center;
         .third__section-block {
-            height: 240px;
+            height: 350px;
             text-align: center;
             display: flex;
             align-items: center;  
@@ -312,12 +332,12 @@ header {
                     text-transform: uppercase;
                 }
                 .third__section-block-header {
-                    color: #ffdf4a;
+                    color: #000;
                     font-size: 20px;
                     font-family: "RobotoBlack", sans-serif;
                 }
                 .third__section-block-text {
-                    color: #fff;
+                    color: #000;
                     font-family: "RobotoLight", sans-serif;
                 }
                 input, button {
@@ -552,9 +572,10 @@ header {
         background-image: url(../img/pic5.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        padding-bottom: 40px;
     .wrapper {
         padding-top: 20px;
-        height: 800px;
+        min-height: 800px;
         max-width: 1200px;
         margin: 0 auto;
         .seventh__section-header-wrap {
@@ -576,29 +597,31 @@ header {
                 left: calc(50% - 12.5%);
                 text-align: center;
                 font-family: "RobotoBold", sans-serif;
-                font-size: 25px;
+                font-size: 20px;
             }
         }
             .seventh__section-block-wrap {
                 overflow: hidden;
                 width: 100%;
                 .seventh__section-block {
-                    border: 10px solid  #fff;
+                    border: 3px solid  #fff;
                     float: left;
-                    width: 32%;
+                    width: 24.6%;
                     height: 280px;
-                    margin-bottom: 1.5%;
+                    margin-bottom: 4px;
                     box-sizing: border-box;
                     background-repeat: no-repeat;
                     background-size: 100% 100%;
                     box-shadow: 5px 5px 5px #d0d0d0;
+                    position: relative;
                     &:nth-child(3n+1) {
-                        background: #cec;
-                        margin-right: 2%;
+                        margin-right: 4px;
                     }
                     &:nth-child(3n+2) {
-                        background: #c0c;
-                        margin-right: 2%;
+                        margin-right: 4px;
+                    }
+                    &:nth-child(3n+3) {
+                        margin-right: 4px;
                     }
                     &:first-child {
                         background-image: url(../img/pic6.jpg);
@@ -617,6 +640,40 @@ header {
                     }
                     &:nth-child(6) {
                         background-image: url(../img/pic11.jpg);
+                    }
+                    &:nth-child(7) {
+                        background-image: url(../img/potolok/ceil1.jpg);
+                    }
+                    &:nth-child(8) {
+                        background-image: url(../img/pic11.jpg);
+                    }
+                    &:nth-child(9) {
+                        background-image: url(../img/pic11.jpg);
+                    }
+                    &:nth-child(10) {
+                        background-image: url(../img/pic11.jpg);
+                    }
+                    &:nth-child(11) {
+                        background-image: url(../img/pic11.jpg);
+                    }
+                    &:nth-child(12) {
+                        background-image: url(../img/pic11.jpg);
+                    }
+                    transition: all .3s;
+                    &:hover {
+                        background-size: 103% 103%;
+                    }
+                    .seventh__section-block-text {
+                        position: absolute;
+                        bottom: 10px;
+                        height: 60px;
+                        width: 100%;
+                        background: rgba(255,255,255,.6);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 24px;
+                        font-family: "RobotoRegular", sans-serif;
                     }
                 }
             }
@@ -669,11 +726,10 @@ header {
                     padding: 10px;
                     float: left;
                     width: 32%;
-                    height: 280px;
+                    height: 250px;
                     margin-bottom: 1.5%;
                     box-sizing: border-box;
                     background: #fff;
-                    /*  */
                     box-shadow: 3px 3px 3px #d0d0d0;
                     display: flex;
                     justify-content: center;
@@ -690,7 +746,7 @@ header {
                             text-transform: uppercase;
                             font-size: 25px;
                             text-align: center;
-                            padding: 30px 0;
+                            padding: 20px 0;
                             font-family: "RobotoLight", sans-serif;
                         }
                         .eighth__section-block-info-price {
@@ -708,7 +764,7 @@ header {
                             }
                         }
                         .eighth__section-block-info-color {
-                            padding: 30px 0;
+                            padding: 20px 0;
                             .eighth__section-block-info-color-text {
                                 text-align: center;
                                 margin-bottom: 10px;
@@ -720,8 +776,8 @@ header {
                                 justify-content: center;
                                 .eighth__section-block-info-color-block_item {
                                     box-sizing: border-box;
-                                    width: 15px;
-                                    height: 15px;
+                                    width: 20px;
+                                    height: 20px;
                                     background: #fff;
                                     margin-right: 5px;
                                     cursor: pointer;
@@ -791,7 +847,7 @@ header {
 
 /* ---------- footer ----------- */
 .footer {
-    background-color: #0068ba;
+    background-color: $grey;
     height: 300px;
     width: 100%;
     .wrapper {
@@ -848,7 +904,7 @@ header {
                 &:last-child {
                     display: flex;
                     justify-content: center;
-                    background: #0068ba;
+                    background: $grey;
                     padding-top: 20px;
                 }
                 .footer__block-item-schedule {
@@ -880,7 +936,7 @@ header {
                     justify-content: space-around;
                     .footer__block-item-social-icon {
                        /*  float: left; */
-                        width: 30px;
+                        width: 28px;
                         height: 19px;
                         padding: 4px;
                         background-image: url(../img/social_sprite.png);
@@ -893,9 +949,9 @@ header {
                         &:nth-child(2) {
                             background-position-x: -29px; 
                         }
-                        &:nth-child(3) {
-                        /*  background-position-x: -52px;  */
-                        }
+                        /* &:nth-child(3) {
+                         background-position-x: -52px; 
+                        } */
                         &:nth-child(4) {
                             background-position-x: -98px; 
                         }
@@ -959,7 +1015,7 @@ header {
     .footer__info {
         height: 50px;
         text-align: center;
-        border-top: 1px solid  #408ecb;
+        border-top: 1px solid  #757575;
         display: flex;
         align-items: center;
         justify-content: center;
