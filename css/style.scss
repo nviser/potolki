@@ -340,12 +340,37 @@ header {
             .second__section-inner-slider {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 font-family: "RobotoLight", sans-serif;
                 font-size: 16px;
                 padding-right: 20%;
                 margin-top: 35px;
                 #slider {
                     width: 70%;
+                    height: 4px;
+                    .ui-slider-handle {
+                        position: relative;
+                        display: block;
+                        border-radius: 50%;
+                        outline: none;
+                        top: -.5em;
+                        background: #fff;
+                        border: 1px solid  $blue;
+                        .tooltip {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: absolute;
+                            top: -30px; 
+                            margin-left: -7px;
+                            height: 20px;
+                            width: 30px;
+                            box-shadow: 0px 1px 5px #e5e5e5;
+                            color: $blue;
+                            font-family: "RobotoBold", sans-serif;
+                            font-size: 18px;
+                        }
+                    }
                 }
             }
             .second__section-inner-select {
@@ -391,6 +416,14 @@ header {
                 padding-right: 20%;
                 font-family: "RobotoLight", sans-serif;
                 font-size: 14px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-image: url(../img/info.png);
+                background-repeat: no-repeat;
+                background-position: 10% center;
+
                 span {
                     color: $blue;
                 }
@@ -400,6 +433,30 @@ header {
                 position: absolute;
                 right: 10px;
                 top: -5px;
+                .second__section-result {
+                    position: absolute;
+                    top: 20%;
+                    left: 50%;
+                    margin-left: -13%;
+                    color: #fff;
+                    text-align: center;
+                    .second__section-result-text {
+                        font-family: "RobotoLight", sans-serif;
+                        font-size: 30px;
+                        text-decoration: underline;
+
+                    }
+                    .second__section-result-price {
+                        font-family: "RobotoBold", sans-serif;
+                        font-size: 50px;
+
+                    }
+                    .second__section-result-unit {
+                        font-family: "RobotoLight", sans-serif;
+                        font-size: 18px;
+
+                    }
+                }
             }
     }
 }
@@ -561,9 +618,8 @@ header {
 
 /* ---------- fifth section ----------- */
 .fifth__section {
-     background-image: url(../img/bg-room1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; 
+    background: #f4f4f4;
+    padding-top: 2%;
     .wrapper {
         height: 400px;
         max-width: 1200px;
@@ -576,18 +632,34 @@ header {
             text-align: center;
             display: flex;
             align-items: center;
+            padding: 10px;
+            background: #fff;
+            box-sizing: border-box;
             &:first-child {
                 padding: 0 20px;
+                background-image: url(../img/bg4.jpg);
+                background-size: cover;
+                background-repeat: no-repeat; 
+                margin-right: 2%;
+                .fifth__section-block-wrap {
+                    border: none;
+                }
             }
             .fifth__section-block-wrap {
+                border: 1px solid  $blue;
+                height: 100%;
+                padding: 1%;
+                box-sizing: border-box;
                 .fifth__section-block-header {
                     color: $yellow;
                     text-transform: uppercase;
                     font-family: "RobotoBlack", sans-serif;
                     font-size: 20px;
+                    margin-top: 40px;
+                    margin-bottom: 30px;
                 }
                 .fifth__section-block-text {
-                    color: #fff;
+                    color: #000;
                     margin-bottom: 50px;
                     font-family: "RobotoLight", sans-serif;
                     font-size: 20px;
@@ -615,6 +687,7 @@ header {
                         border: none;
                         font-family: "RobotoLight", sans-serif;
                         font-size: 16px;
+                        border: 1px solid  #dcdcdc;
                         &.square {
                             position: relative;
                             margin-left: -2px;
@@ -822,7 +895,7 @@ header {
             text-align: center;
             text-transform: uppercase;
             font-family: "RobotoBlack", sans-serif;
-            font-size: 25px;
+            font-size: 20px;
         }
         .eighth__section-block-wrap {
                 overflow: hidden;

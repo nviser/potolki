@@ -303,12 +303,35 @@ header {
       .second__section .wrapper .second__section-inner .second__section-inner-slider {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         font-family: "RobotoLight", sans-serif;
         font-size: 16px;
         padding-right: 20%;
         margin-top: 35px; }
         .second__section .wrapper .second__section-inner .second__section-inner-slider #slider {
-          width: 70%; }
+          width: 70%;
+          height: 4px; }
+          .second__section .wrapper .second__section-inner .second__section-inner-slider #slider .ui-slider-handle {
+            position: relative;
+            display: block;
+            border-radius: 50%;
+            outline: none;
+            top: -.5em;
+            background: #fff;
+            border: 1px solid #0068ba; }
+            .second__section .wrapper .second__section-inner .second__section-inner-slider #slider .ui-slider-handle .tooltip {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: absolute;
+              top: -30px;
+              margin-left: -7px;
+              height: 20px;
+              width: 30px;
+              box-shadow: 0px 1px 5px #e5e5e5;
+              color: #0068ba;
+              font-family: "RobotoBold", sans-serif;
+              font-size: 18px; }
       .second__section .wrapper .second__section-inner .second__section-inner-select {
         margin: 35px 0;
         display: flex;
@@ -344,13 +367,37 @@ header {
         text-align: center;
         padding-right: 20%;
         font-family: "RobotoLight", sans-serif;
-        font-size: 14px; }
+        font-size: 14px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../img/info.png);
+        background-repeat: no-repeat;
+        background-position: 10% center; }
         .second__section .wrapper .second__section-inner .second__section-inner-info span {
           color: #0068ba; }
     .second__section .wrapper .second__section-img {
       position: absolute;
       right: 10px;
       top: -5px; }
+      .second__section .wrapper .second__section-img .second__section-result {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        margin-left: -13%;
+        color: #fff;
+        text-align: center; }
+        .second__section .wrapper .second__section-img .second__section-result .second__section-result-text {
+          font-family: "RobotoLight", sans-serif;
+          font-size: 30px;
+          text-decoration: underline; }
+        .second__section .wrapper .second__section-img .second__section-result .second__section-result-price {
+          font-family: "RobotoBold", sans-serif;
+          font-size: 50px; }
+        .second__section .wrapper .second__section-img .second__section-result .second__section-result-unit {
+          font-family: "RobotoLight", sans-serif;
+          font-size: 18px; }
 
 /* ---------- third section ----------- */
 .third__section {
@@ -483,9 +530,8 @@ header {
 
 /* ---------- fifth section ----------- */
 .fifth__section {
-  background-image: url(../img/bg-room1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background: #f4f4f4;
+  padding-top: 2%; }
   .fifth__section .wrapper {
     height: 400px;
     max-width: 1200px;
@@ -497,57 +543,74 @@ header {
     .fifth__section .wrapper .fifth__section-block {
       text-align: center;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      padding: 10px;
+      background: #fff;
+      box-sizing: border-box; }
       .fifth__section .wrapper .fifth__section-block:first-child {
-        padding: 0 20px; }
-      .fifth__section .wrapper .fifth__section-block .fifth__section-block-wrap .fifth__section-block-header {
-        color: #ffdf4a;
-        text-transform: uppercase;
-        font-family: "RobotoBlack", sans-serif;
-        font-size: 20px; }
-      .fifth__section .wrapper .fifth__section-block .fifth__section-block-wrap .fifth__section-block-text {
-        color: #fff;
-        margin-bottom: 50px;
-        font-family: "RobotoLight", sans-serif;
-        font-size: 20px; }
-      .fifth__section .wrapper .fifth__section-block .fifth__section-block-wrap button {
-        width: 60%;
-        height: 45px;
-        margin-top: 19px;
-        text-transform: uppercase;
-        margin-bottom: 0;
-        font-weight: 500;
-        font-size: 20px;
-        font-family: "RobotoBlack", sans-serif;
-        text-shadow: #7e6700 0 -1px 0;
-        color: #a68f23;
-        border-bottom: 4px solid  #dfc137; }
-        .fifth__section .wrapper .fifth__section-block .fifth__section-block-wrap button.calculate {
+        padding: 0 20px;
+        background-image: url(../img/bg4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 2%; }
+        .fifth__section .wrapper .fifth__section-block:first-child .fifth__section-block-wrap {
+          border: none; }
+      .fifth__section .wrapper .fifth__section-block .fifth__section-block-wrap {
+        border: 1px solid #0068ba;
+        height: 100%;
+        padding: 1%;
+        box-sizing: border-box; }
+        .fifth__section .wrapper .fifth__section-block .fifth__section-block-wrap .fifth__section-block-header {
+          color: #ffdf4a;
+          text-transform: uppercase;
+          font-family: "RobotoBlack", sans-serif;
+          font-size: 20px;
+          margin-top: 40px;
+          margin-bottom: 30px; }
+        .fifth__section .wrapper .fifth__section-block .fifth__section-block-wrap .fifth__section-block-text {
+          color: #000;
+          margin-bottom: 50px;
+          font-family: "RobotoLight", sans-serif;
+          font-size: 20px; }
+        .fifth__section .wrapper .fifth__section-block .fifth__section-block-wrap button {
+          width: 60%;
+          height: 45px;
+          margin-top: 19px;
+          text-transform: uppercase;
+          margin-bottom: 0;
+          font-weight: 500;
+          font-size: 20px;
+          font-family: "RobotoBlack", sans-serif;
+          text-shadow: #7e6700 0 -1px 0;
+          color: #a68f23;
+          border-bottom: 4px solid  #dfc137; }
+          .fifth__section .wrapper .fifth__section-block .fifth__section-block-wrap button.calculate {
+            width: 49%;
+            position: relative;
+            top: -2px;
+            margin-top: 0; }
+        .fifth__section .wrapper .fifth__section-block .fifth__section-block-wrap .fifth__section-block-inputs input {
+          box-sizing: border-box;
           width: 49%;
-          position: relative;
-          top: -2px;
-          margin-top: 0; }
-      .fifth__section .wrapper .fifth__section-block .fifth__section-block-wrap .fifth__section-block-inputs input {
-        box-sizing: border-box;
-        width: 49%;
-        height: 45px;
-        padding: 0 10px;
-        margin: 0 2px 5px 0;
-        border: none;
-        font-family: "RobotoLight", sans-serif;
-        font-size: 16px; }
-        .fifth__section .wrapper .fifth__section-block .fifth__section-block-wrap .fifth__section-block-inputs input.square {
-          position: relative;
-          margin-left: -2px;
-          /* &:after {
-              content: 'в М2';
-              height: 45px;
-              width: 45px;
-              border-right: 1px solid  #dcdcdc;
-              position: absolute;
-              top: 0;
-              right: 0;
-          } */ }
+          height: 45px;
+          padding: 0 10px;
+          margin: 0 2px 5px 0;
+          border: none;
+          font-family: "RobotoLight", sans-serif;
+          font-size: 16px;
+          border: 1px solid  #dcdcdc; }
+          .fifth__section .wrapper .fifth__section-block .fifth__section-block-wrap .fifth__section-block-inputs input.square {
+            position: relative;
+            margin-left: -2px;
+            /* &:after {
+                content: 'в М2';
+                height: 45px;
+                width: 45px;
+                border-right: 1px solid  #dcdcdc;
+                position: absolute;
+                top: 0;
+                right: 0;
+            } */ }
 
 /* ---------- six section ----------- */
 .six__section {
@@ -704,7 +767,7 @@ header {
       text-align: center;
       text-transform: uppercase;
       font-family: "RobotoBlack", sans-serif;
-      font-size: 25px; }
+      font-size: 20px; }
     .eighth__section .wrapper .eighth__section-block-wrap {
       overflow: hidden;
       width: 100%; }
