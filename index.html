@@ -8,9 +8,18 @@
     <title>Top potolok</title>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
         crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="js/jquery-ui.css">
     <link rel="stylesheet" href="css/style.min.css">
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script> -->
+    <script src=""></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#slider").slider();
+        });
+    </script>
 </head>
 
 <body>
@@ -96,11 +105,43 @@
         </div>
     </section>
     <section class="second__section">
-
+        <div class="wrapper">
+            <div class="second__section-inner">
+                <div class="second__section-inner-header">
+                    <h2>рассчитайте стоимость вашего потолка</h2>
+                </div>
+                <div class="second__section-inner-slider">
+                    <div class="second__section-inner-slider-text">Площадь потолка: &nbsp;</div>
+                    <div class="second__section-inner-slider-from"> от 5</div>
+                    <div id="slider"></div>
+                    <div class="second__section-inner-slider-to">до 50 M<sup>2</sup></div>
+                </div>
+                <div class="second__section-inner-select">
+                    <div class="canvas">
+                        <label for="canvas">Тип полотна</label>
+                        <select name="canvas" id="canvas"></select>
+                    </div>
+                    <div class="corners">
+                        <label for="corners">Кол-во углов</label>
+                        <select name="corners" id="corners"></select>
+                    </div>
+                    <div class="lamps">
+                        <label for="lamps">Светильники</label>
+                        <select name="lamps" id="lamps"></select>
+                    </div>
+                    <div class="for-button">
+                        <button class="tp-button">Рассчитать</button>
+                    </div>
+                </div>
+                <div class="second__section-inner-info">Если все поля заполнены правильно то <span>это окончательная стоимость</span> потолка с установкой</div>
+            </div>
+            <div class="second__section-img"><img src="img/result-sheet.png" alt="sheet"></div>            
+        </div>
     </section>
 
     <section class="fourth__section">
         <div class="wrapper">
+            <div class="fourth__section-block-header">типовые проекты</div>
             <div class="fourth__section-block">
                 <div class="fourth__section-block-photo"></div>
                 <div class="fourth__section-block-cost">
