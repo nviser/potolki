@@ -374,7 +374,7 @@ header {
     padding: 10px;
     background: #ffffff;
     position: relative;
-    height: 300px;
+    min-height: 300px;
     box-sizing: border-box; }
     .second__section .wrapper .second__section-inner {
       border: 1px solid #0068ba;
@@ -464,12 +464,15 @@ header {
         height: 40px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        background-image: url(../img/info.png);
-        background-repeat: no-repeat;
-        background-position: 8vw center; }
+        justify-content: center; }
         .second__section .wrapper .second__section-inner .second__section-inner-info span {
           color: #0068ba; }
+          .second__section .wrapper .second__section-inner .second__section-inner-info span.sign {
+            width: 40px;
+            height: 40px;
+            background-image: url(../img/info.png);
+            background-repeat: no-repeat;
+            background-position: center; }
     .second__section .wrapper .second__section-img {
       position: absolute;
       right: 10px;
@@ -626,7 +629,7 @@ header {
   background: #f4f4f4;
   padding-top: 2%; }
   .fifth__section .wrapper {
-    height: 400px;
+    min-height: 400px;
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
@@ -1237,6 +1240,26 @@ header {
   .second__section .wrapper .second__section-inner .second__section-inner-info {
     background-position: 1.5vw center; }
 
+  .second__section .wrapper {
+    height: 495px; }
+    .second__section .wrapper .second__section-img {
+      top: 285px;
+      width: 250px;
+      height: 200px;
+      background: #0068ba;
+      right: calc(50% - 125px); }
+      .second__section .wrapper .second__section-img img {
+        display: none; }
+    .second__section .wrapper .second__section-img .second__section-result {
+      top: 19%;
+      left: 35%; }
+    .second__section .wrapper .second__section-inner .second__section-inner-slider {
+      padding-right: 0; }
+    .second__section .wrapper .second__section-inner .second__section-inner-select {
+      padding-right: 0; }
+    .second__section .wrapper .second__section-inner .second__section-inner-info {
+      padding-right: 0; }
+
   .fourth__section .wrapper .fourth__section-block .fourth__section-block-cost .fourth__section-block-cost-price {
     max-width: 100px;
     font-size: 12px;
@@ -1255,7 +1278,88 @@ header {
   .eighth__section .wrapper .eighth__section-block-wrap .eighth__section-block {
     height: 230px; } }
 @media screen and (max-width: 800px) {
+  header .header__logo .header__logo-wrap .header__logo-item:first-child {
+    width: 60%; }
   header .header__logo .header__logo-wrap .header__logo-item:last-child {
-    width: 55%; } }
+    width: 55%; }
+
+  .slider .slider__inner {
+    width: 40%; }
+
+  .second__section .wrapper {
+    height: 610px; }
+    .second__section .wrapper .second__section-img {
+      top: 400px; }
+    .second__section .wrapper .second__section-inner .second__section-inner-select {
+      flex-flow: row wrap;
+      align-items: flex-start;
+      align-content: flex-start;
+      justify-content: center; }
+      .second__section .wrapper .second__section-inner .second__section-inner-select .canvas {
+        margin-right: 15px; }
+      .second__section .wrapper .second__section-inner .second__section-inner-select .corners {
+        margin-right: 15px; }
+      .second__section .wrapper .second__section-inner .second__section-inner-select .for-button {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px; }
+        .second__section .wrapper .second__section-inner .second__section-inner-select .for-button button {
+          padding-left: 65px; }
+
+  .fourth__section .wrapper .fourth__section-block {
+    /* height: 275px; */
+    width: 49%; }
+    .fourth__section .wrapper .fourth__section-block:nth-child(3n+1) {
+      margin-right: 0; }
+    .fourth__section .wrapper .fourth__section-block:nth-child(3n+2) {
+      margin-right: 0; }
+    .fourth__section .wrapper .fourth__section-block:nth-child(3n+3) {
+      margin-right: 0; }
+    .fourth__section .wrapper .fourth__section-block:nth-child(2n) {
+      margin-right: 2%; }
+    .fourth__section .wrapper .fourth__section-block .fourth__section-block-photo {
+      /* height: 200px; */ }
+
+  .fifth__section .wrapper {
+    display: block; }
+    .fifth__section .wrapper .fifth__section-block:first-child {
+      margin-right: 0;
+      margin-bottom: 2%; }
+    .fifth__section .wrapper .fifth__section-block .fifth__section-block-wrap button {
+      width: 210px; }
+
+  .seventh__section .wrapper .seventh__section-block-wrap .seventh__section-block {
+    width: 32.7%; }
+
+  .eighth__section .wrapper .eighth__section-block-wrap .eighth__section-block {
+    width: 49%; }
+    .eighth__section .wrapper .eighth__section-block-wrap .eighth__section-block:nth-child(3n+1) {
+      margin-right: 0; }
+    .eighth__section .wrapper .eighth__section-block-wrap .eighth__section-block:nth-child(3n+2) {
+      margin-right: 0; }
+    .eighth__section .wrapper .eighth__section-block-wrap .eighth__section-block:nth-child(2n+1) {
+      margin-right: 2%; }
+
+  .footer .wrapper .footer__block {
+    width: 100%; }
+    .footer .wrapper .footer__block .footer__block-item:first-child {
+      background-image: none; }
+      .footer .wrapper .footer__block .footer__block-item:first-child .footer__block-item-top {
+        width: 260px;
+        margin: 0 auto;
+        position: relative; }
+        .footer .wrapper .footer__block .footer__block-item:first-child .footer__block-item-top:before {
+          content: '';
+          width: 100px;
+          height: 50px;
+          position: absolute;
+          top: 0;
+          left: -90px;
+          background-image: url(../img/logo.png);
+          background-repeat: no-repeat; }
+    .footer .wrapper .footer__block .footer__block-item:last-child {
+      justify-content: flex-start; }
+    .footer .wrapper .footer__block .footer__block-item-contact {
+      width: 75%; } }
 
 /*# sourceMappingURL=style.css.map */
