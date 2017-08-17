@@ -1,0 +1,159 @@
+.slideshow-container{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: 400px;
+	overflow: hidden;
+	margin-top: -17px;
+}
+.prev, .next{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;	
+}
+
+.next{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);	
+}
+
+.mySlides{
+	height: 400px;
+	text-align: center;
+	&:nth-child(2){
+		display: none;
+	}
+	&:nth-child(3){
+		display: none;
+	}
+	img {
+		height: 400px;
+	}
+}
+
+.text{
+	color: #f2f2f2;
+	font-size: 20px;
+	padding: 8px 12px;
+	position: relative;
+	bottom: 90px;
+}
+
+.dot{
+	cursor: pointer;
+	height: 5px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: $blue;
+	display: inline-block;
+	transition: background-color 0.6s ease;	
+	transform: skewX(-15deg);
+}
+
+.active, .dot:hover{
+	background-color: $yellow;
+}
+
+.fade{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1s; 
+	animation-name: fade;
+	animation-duration: 1s;	
+}
+
+@-webkit-keyframes fade {
+	from{opacity:.4}
+	to{opacity: 1}	
+}
+@keyframes fade {
+	from{opacity:.4}
+	to{opacity: 1}	
+}
+
+/* -------- slider --------- */
+.slider {
+    height: 400px;
+    background-size: 100%;
+    .slider__inner {
+        min-height: 100%;
+        background-color: rgba(255,255,255,.8);
+        width: 30%;
+        position: absolute;
+        z-index: 1;
+        transform: skewX(15deg);
+        right: 15%;
+        text-transform: uppercase;
+        .slider__inner-top-text {
+            font-size: 30px;
+            transform: skewX(-15deg);
+            text-align: center;
+            margin-top: 100px;
+            font-family: "RobotoBlack", sans-serif;
+        }
+        .slider__inner-text {
+            transform: skewX(-15deg);
+            font-size: 25px;
+            font-family: "RobotoLight", sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .slider__inner-button {
+            transform: skewX(-15deg);
+            text-align: center;
+            margin-top: 20px;
+            button {
+                border: 1px solid  #0068ba;
+                background: none;
+                text-transform: capitalize;
+                color: #0068ba;
+                height: 40px;
+                width: 150px;
+                font-size: 20px;
+                font-family: "RobotoLight";
+                transition: all .5s;
+                &:hover {
+                    background: #0068ba;
+                    color: #fff;
+                }
+            }
+		}
+		.dots {
+			text-align: center;
+			margin-top: 60px;
+		}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

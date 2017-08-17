@@ -15,9 +15,19 @@
     <script src=""></script>
     <script src="js/jquery.js"></script>
     <script src="js/jquery-ui.js"></script>
+    <script src="js/slider.js"></script>
     <script>
         $(function () {
-            $("#slider").slider();
+            $("#slider").slider({
+                range: "min",
+                value: 32,
+                min: 1,
+                max: 50,
+                slide: function (event, ui) {
+                    $("#amount").val(ui.value);
+                }
+            });
+            $("#amount").val($("#slider").slider("value"));
         });
     </script>
 </head>
@@ -64,14 +74,41 @@
             </div>
         </div>
     </header>
+
     <div class="slider">
-        <div class="slider__inner">
-            <div class="slider__inner-top-text">хотите хороший </br> натяжной потолок?</div>
-            <div class="slider__inner-text">тогда вам к нам!</div>
-            <div class="slider__inner-button"><button>подробнее...</button></div>
-            <div></div>
+        <div class="slideshow-container">
+            <div class="slider__inner">
+                <div class="slider__inner-top-text">хотите хороший </br> натяжной потолок?</div>
+                <div class="slider__inner-text">тогда вам к нам!</div>
+                <div class="slider__inner-button"><button>подробнее...</button></div>
+                <div class="dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <div class="mySlides"><br>
+                <!-- <div class="numbertext">1/3</div><br> -->
+                <img class="fade" src="img/slider/ceil1.jpg" style="width: 100%" alt="Море">
+                <!-- <div class="text">Это красивый берег моря.</div> -->
+            </div>
+            <div class="mySlides"><br>
+                <!-- <div class="numbertext">2/3</div><br> -->
+                <img class="fade" src="img/slider/ceil2.jpg" style="width: 100%" alt="Япония">
+                <!-- <div class="text">Это парк в Японии.</div> -->
+            </div>
+            <div class="mySlides"><br>
+                <!-- <div class="numbertext">3/3</div><br> -->
+                <img class="fade" src="img/slider/ceil3.jpg" style="width: 100%" alt="Озеро">
+                <!-- <div class="text">Это озеро на Южном Урале.</div> -->
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+
         </div>
     </div>
+
     <section class="first__section">
         <div class="wrapper">
             <div class="first__section-block">
@@ -133,7 +170,7 @@
                         <button class="tp-button">Рассчитать</button>
                     </div>
                 </div>
-                <div class="second__section-inner-info">Если все поля заполнены правильно то <span>это окончательная стоимость</span> потолка с установкой</div>
+                <div class="second__section-inner-info">Если все поля заполнены правильно то <span>&nbsp; это окончательная стоимость &nbsp;</span> потолка с установкой</div>
             </div>
             <div class="second__section-img">
                 <img src="img/result-sheet.png" alt="sheet">
@@ -142,7 +179,7 @@
                     <div class="second__section-result-price">27000</div>
                     <div class="second__section-result-unit">рублей</div>
                 </div>
-            </div>            
+            </div>
         </div>
     </section>
 
@@ -155,7 +192,7 @@
                     <div class="fourth__section-block-cost-price"><strong>5247</strong> руб.</div>
                     <div class="fourth__section-block-cost-detail"><button>Подробный расчет</button></div>
                 </div>
-                <div class="fourth__section-block-info">Потолок с фотопечатью в детской 9.2 м<sup>2</sup></div>
+                <div class="fourth__section-block-info">Потолок с фотопечатью в детской 9.2 <sup>2</sup></div>
             </div>
             <div class="fourth__section-block">
                 <div class="fourth__section-block-photo"></div>
