@@ -19,6 +19,7 @@
     <script src="js/slider.js"></script>
     <script>
         $(function () {
+
             $("#slider").slider({
                 range: "min",
                 value: 32,
@@ -28,7 +29,16 @@
                     $("#amount").val(ui.value);
                 }
             });
+            
             $("#amount").val($("#slider").slider("value"));
+
+            /* Menu toggle */
+
+            $('.menu').click(function () {
+                $(this).toggleClass('open');
+                $('.menu_expand').toggleClass('open');
+            });
+
         });
     </script>
 </head>
@@ -52,7 +62,24 @@
                 <div class="header__main-panel-item"></div>
             </div>
         </nav>
-        <div class="nav"></div>
+        <div class="nav">
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menu_expand">
+            <div class="menu_wrap">
+                <div class="menu_item"><a href="#">Домой</a></div>
+                <div class="menu_item"><a href="#">О нас</a></div>
+                <div class="menu_item"><a href="#">Виды потолков</a></div>
+                <div class="menu_item"><a href="#">Цены</a></div>
+                <div class="menu_item"><a href="#">Наши работы</a></div>
+                <div class="menu_item"><a href="#">Статьи</a></div>
+                <!-- <div class="menu_item"><a href="#">about us</a></div> -->
+            </div>
+        </div>
         <div class="header__logo">
             <div class="header__logo-wrap">
                 <div class="header__logo-item">
@@ -166,7 +193,7 @@
                         <button class="tp-button">Рассчитать</button>
                     </div>
                 </div>
-                <div class="second__section-inner-info"><span class="sign"></span>Если все поля заполнены правильно то <span>&nbsp; это окончательная стоимость &nbsp;</span> потолка с установкой</div>
+                <div class="second__section-inner-info"><span class="sign"></span>Если все поля заполнены правильно то <span>&nbsp; это окончательная стоимость &nbsp;</span>                    потолка с установкой</div>
             </div>
             <div class="second__section-img">
                 <img src="img/result-sheet.png" alt="sheet">

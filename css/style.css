@@ -168,7 +168,10 @@ button {
   border-bottom: 2px solid #dfc137;
   cursor: pointer;
   font-family: "RobotoRegular", sans-serif;
-  font-size: 18px; }
+  font-size: 18px;
+  /* &:hover {
+      box-shadow: inset 0 5px 5px #f0e29f;
+  } */ }
 
 header {
   background: #0068ba;
@@ -231,6 +234,66 @@ header {
           background-position-x: -132px; }
   header .nav {
     display: none; }
+    header .nav .menu {
+      cursor: pointer;
+      height: 25px;
+      position: absolute;
+      right: -40px;
+      top: 8px;
+      width: 105px;
+      display: none; }
+    header .nav .menu span {
+      background: #fff;
+      height: 3px;
+      position: absolute;
+      transition: all 0.3s ease-in-out 0s;
+      width: 30px; }
+    header .nav .menu span:nth-child(2) {
+      top: 10px; }
+    header .nav .menu span:nth-child(3) {
+      top: 20px; }
+    header .nav .menu.open span:nth-child(1) {
+      -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+      top: 10px; }
+    header .nav .menu.open span:nth-child(3) {
+      -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+      top: 10px; }
+    header .nav .menu.open span:nth-child(2) {
+      opacity: 0; }
+  header .menu_expand {
+    background: #f4f2ec;
+    /* display: none;   */
+    padding: 10px 10px;
+    text-transform: uppercase;
+    position: absolute;
+    width: 250px;
+    right: -275px;
+    z-index: 1;
+    transition: transform .3s; }
+  header .menu_expand.open {
+    /* display: block; */
+    transform: translate(-275px, 0); }
+  header .menu_item {
+    padding: 10px;
+    font-family: "RobotoRegular", sans-serif;
+    /* font-family: "ZurichCondensedBT", sans-serif; */
+    text-align: center; }
+  header .menu_item a {
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1px; }
+  header .menu_item:nth-child(2n+1) {
+    background: #0068ba;
+    opacity: 0.5;
+    /* text-shadow: 1px 2px 0px #fff */ }
+  header .menu_item:nth-child(2n) {
+    /* text-shadow: 1px 2px 0px #ccc; */ }
   header .header__logo {
     box-shadow: 0px 1px 3px #000;
     padding: 20px 0 10px;
@@ -1371,6 +1434,8 @@ header {
     width: 100%;
     height: 40px;
     background: #0068ba; }
+    header .nav .menu {
+      display: block; }
 
   .second__section .wrapper .second__section-inner .second__section-inner-info {
     font-size: 10px; }
