@@ -1386,8 +1386,15 @@ header {
     .seventh__section .wrapper .seventh__section-block-wrap .seventh__section-block:nth-child(2n+1) {
       margin-right: 1%; } }
 @media screen and (max-width: 600px) {
-  header .header__logo .header__logo-wrap .header__logo-item:first-child {
-    width: 75%; }
+  header .header__logo .header__logo-wrap .header__logo-item {
+    width: 100%; }
+    header .header__logo .header__logo-wrap .header__logo-item:first-child {
+      width: 75%;
+      font-size: 8vw; }
+    header .header__logo .header__logo-wrap .header__logo-item:last-child {
+      width: 75%; }
+    header .header__logo .header__logo-wrap .header__logo-item a {
+      font-size: 5vw; }
 
   .second__section .wrapper .second__section-inner .second__section-inner-slider {
     font-size: 10px; }

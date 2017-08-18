@@ -1558,9 +1558,19 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-    header .header__logo .header__logo-wrap .header__logo-item{
-        &:first-child {
-            width: 75%;
+    header .header__logo .header__logo-wrap {
+        .header__logo-item{
+            width: 100%;
+            &:first-child {
+                width: 75%;
+                font-size: 8vw;
+            }
+            &:last-child {
+                width: 75%;
+            }
+            a {
+                font-size: 5vw;
+            }
         }
     }
 
