@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$blue".
-        on line 20 of C:\OpenServer\domains\toppotolok\css\main.scss
+        on line 17 of C:\OpenServer\domains\toppotolok\css\main.scss
 
-15:     /* &:hover {
-16:         box-shadow: inset 0 5px 5px #f0e29f;
-17:     } *\/
-18: }
-19: header {
-20:     background: $blue;
-21:     nav {
-22:         overflow: hidden;
-23:         max-width: 1200px;
-24:         margin: 0 auto; 
-25:         ul  {
+12:     cursor: pointer;
+13:     font-family: "RobotoRegular", sans-serif;
+14:     font-size: 18px;
+15: }
+16: header {
+17:     background: $blue;
+18:     nav {
+19:         /* overflow: hidden; *\/
+20:         max-width: 1200px;
+21:         margin: 0 auto; 
+22:         position: relative;
 
 Backtrace:
-C:\OpenServer\domains\toppotolok\css\main.scss:20
+C:\OpenServer\domains\toppotolok\css\main.scss:17
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 20 of C:\OpenServer\domains\toppotolok\css\main.scss\A \A 15:     /* &:hover {\A 16:         box-shadow: inset 0 5px 5px #f0e29f;\A 17:     } */\A 18: }\A 19: header {\A 20:     background: $blue;\A 21:     nav {\A 22:         overflow: hidden;\A 23:         max-width: 1200px;\A 24:         margin: 0 auto; \A 25:         ul  {"; }
+  content: "Error: Undefined variable: \"$blue\".\A         on line 17 of C:\OpenServer\domains\toppotolok\css\main.scss\A \A 12:     cursor: pointer;\A 13:     font-family: \"RobotoRegular\", sans-serif;\A 14:     font-size: 18px;\A 15: }\A 16: header {\A 17:     background: $blue;\A 18:     nav {\A 19:         /* overflow: hidden; */\A 20:         max-width: 1200px;\A 21:         margin: 0 auto; \A 22:         position: relative;"; }

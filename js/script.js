@@ -10,9 +10,13 @@ $(function () {
         }
     });   */
 
-    $('header nav ul li:nth-child(3)').click('on', function() {
-        $('.ceil_types').toggleClass('open');
+    $('header nav ul li:nth-child(3)').click(function() {
+            $('.ceil_types').toggleClass('open');
     });
+
+    /*  $('.ceil_types').mouseout(function() {
+            $('.ceil_types').removeClass('open');
+    });  */
 
     $('header .ceil_types a .ceil_types-item').click('on', function() {
         $('.ceil_types').toggleClass('open');
@@ -52,3 +56,8 @@ $(function () {
         var src = 'img/lamps/';
         el.children[0].style.backgroundImage = 'url(' + src + name + '.jpg)';
     };
+
+    /* document.onclick = function() {
+        console.log('in x');
+        document.getElementById('ceil_types').style.display = 'none'
+    }  */

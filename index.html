@@ -24,12 +24,51 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Виды потолков</a></li>
-                <li><a href="#">Цены</a></li>
-                <li><a href="#">Наши работы</a></li>
-                <li><a href="#">Статьи</a></li>
+                <li class="nav-li"><a href="#"></a></li>
+                <li class="nav-li"><a href="#">О нас</a></li>
+                <li class="nav-li"><a href="#">Виды потолков</a>
+                        <ul class="ceil_types" id="ceil_types">
+                            <li><a href="#">
+                                Тканевые
+                            </a>
+                            <li><a href="#">
+                                Глянцевые
+                            </a>
+                            <li><a href="#">
+                                Матовые
+                            </a>
+                            <li><a href="#">
+                                Сатиновые
+                            </a>
+                            <li><a href="#">
+                                Фотопечать
+                            </a>
+                            <li><a href="#">
+                                Многоуровневые
+                            </a>
+                            <li><a href="#">
+                                Декоративные
+                            </a>
+                            <li><a href="#">
+                                Парящие
+                            </a>
+                            <li><a href="#">
+                                3D потолки
+                            </a>
+                            <li><a href="#">
+                                Перфорированные
+                            </a>
+                            <li><a href="#">
+                                Световые
+                            </a>
+                            <li><a href="#">
+                                Криволинейная спайка
+                            </a>
+                        </ul>
+                </li>
+                <li class="nav-li"><a href="#">Цены</a></li>
+                <li class="nav-li"><a href="#">Наши работы</a></li>
+                <li class="nav-li"><a href="#">Статьи</a></li>
             </ul>
             <div class="header__main-panel">
                 <div class="header__main-panel-item"></div>
@@ -39,13 +78,13 @@
                 <div class="header__main-panel-item"></div>
             </div>
         </nav>
-         <div class="nav">
+        <div class="nav">
             <div class="menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        </div> 
+        </div>
         <div class="menu_expand">
             <div class="menu_wrap">
                 <div class="menu_item"><a href="#">Домой</a></div>
@@ -57,44 +96,46 @@
                 <!-- <div class="menu_item"><a href="#">about us</a></div> -->
             </div>
         </div>
-        <div class="ceil_types">
-            <a href="#">
-                <div class="ceil_types-item">Тканевые</div>
-            </a>
-            <a href="#">
-                <div class="ceil_types-item">Глянцевые</div>
-            </a>
-            <a href="#">
-                <div class="ceil_types-item">Матовые</div>
-            </a>
-            <a href="#">
-                <div class="ceil_types-item">Сатиновые</div>
-            </a>
-            <a href="#">
-                <div class="ceil_types-item">Фотопечать</div>
-            </a>
-            <a href="#">
-                <div class="ceil_types-item">Многоуровневые</div>
-            </a>
-            <a href="#">
-                <div class="ceil_types-item">Декоративные</div>
-            </a>
-            <a href="#">
-                <div class="ceil_types-item">Парящие</div>
-            </a>
-            <a href="#">
-                <div class="ceil_types-item">3D потолки</div>
-            </a>
-            <a href="#">
-                <div class="ceil_types-item">Перфорированные</div>
-            </a>
-            <a href="#">
-                <div class="ceil_types-item">Световые</div>
-            </a>
-            <a href="#">
-                <div class="ceil_types-item">Криволинейная спайка</div>
-            </a>
-        </div>
+        <!-- <div class="for_menu">
+            <div class="ceil_types" id="ceil_types">
+                <a href="#">
+                    <div class="ceil_types-item">Тканевые</div>
+                </a>
+                <a href="#">
+                    <div class="ceil_types-item">Глянцевые</div>
+                </a>
+                <a href="#">
+                    <div class="ceil_types-item">Матовые</div>
+                </a>
+                <a href="#">
+                    <div class="ceil_types-item">Сатиновые</div>
+                </a>
+                <a href="#">
+                    <div class="ceil_types-item">Фотопечать</div>
+                </a>
+                <a href="#">
+                    <div class="ceil_types-item">Многоуровневые</div>
+                </a>
+                <a href="#">
+                    <div class="ceil_types-item">Декоративные</div>
+                </a>
+                <a href="#">
+                    <div class="ceil_types-item">Парящие</div>
+                </a>
+                <a href="#">
+                    <div class="ceil_types-item">3D потолки</div>
+                </a>
+                <a href="#">
+                    <div class="ceil_types-item">Перфорированные</div>
+                </a>
+                <a href="#">
+                    <div class="ceil_types-item">Световые</div>
+                </a>
+                <a href="#">
+                    <div class="ceil_types-item">Криволинейная спайка</div>
+                </a>
+            </div>
+        </div> -->
         <div class="header__logo">
             <div class="header__logo-wrap">
                 <div class="header__logo-item">
@@ -120,11 +161,11 @@
                     <div class="slider__inner-top-text">хотите хороший </br> натяжной потолок?</div>
                     <div class="slider__inner-text">тогда вам к нам!</div>
                     <div class="slider__inner-button"><button>подробнее...</button></div>
-                        <div class="dots">
-                            <span class="dot active" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                        </div>
+                    <div class="dots">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
                 </div>
                 <img class="fade" src="img/slider/ceil1.jpg" style="width: 100%" alt="Море">
             </div>
@@ -133,11 +174,11 @@
                     <div class="slider__inner-top-text">широкий выбор </br> низкие цены</div>
                     <div class="slider__inner-text">ждем вас</div>
                     <div class="slider__inner-button"><button>подробнее...</button></div>
-                     <div class="dots">
+                    <div class="dots">
                         <span class="dot" onclick="currentSlide(1)"></span>
                         <span class="dot active" onclick="currentSlide(2)"></span>
                         <span class="dot" onclick="currentSlide(3)"></span>
-                    </div> 
+                    </div>
                 </div>
                 <img class="fade" src="img/slider/ceil2.jpg" style="width: 100%" alt="Япония">
             </div>
@@ -150,7 +191,7 @@
                         <span class="dot" onclick="currentSlide(1)"></span>
                         <span class="dot" onclick="currentSlide(2)"></span>
                         <span class="dot active" onclick="currentSlide(3)"></span>
-                    </div> 
+                    </div>
                 </div>
                 <img class="fade" src="img/slider/ceil3.jpg" style="width: 100%" alt="Озеро">
             </div>
@@ -220,9 +261,13 @@
                     </div>
                     <div class="for-button">
                         <button class="tp-button">Рассчитать</button>
-                    </div> 
+                    </div>
                 </div>
-                <div class="second__section-inner-info"><span class="sign"></span><div class="second__section-inner-info-inner">Если все поля заполнены правильно то <span>&nbsp; это окончательная стоимость &nbsp;</span> потолка с установкой</div></div>
+                <div class="second__section-inner-info"><span class="sign"></span>
+                    <div class="second__section-inner-info-inner">Если все поля заполнены правильно то <span>&nbsp; это окончательная стоимость &nbsp;</span> потолка с
+                        установкой
+                    </div>
+                </div>
             </div>
             <div class="second__section-img">
                 <img src="img/result-sheet.png" alt="sheet">
@@ -237,7 +282,9 @@
 
     <section class="fourth__section">
         <div class="wrapper">
-            <div class="fourth__section-block-header"><h2>типотиповые проекты</h2></div>
+            <div class="fourth__section-block-header">
+                <h2>типотиповые проекты</h2>
+            </div>
             <div class="fourth__section-block">
                 <div class="fourth__section-block-photo"></div>
                 <div class="fourth__section-block-cost">
@@ -323,11 +370,11 @@
             <div class="six__section-header">
                 <h2> как мы работаем?</h2>
             </div>
-            <div class="six__section-text"> 
+            <div class="six__section-text">
                 <h3 class="text-header"> как мы работаем?</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim hic, voluptates dolore tempore aliquam natus
-                officiis, a eveniet ullam doloremque. Velit alias, delectus hic, quo sapiente cupiditate dolorum dolores
-                eum. Commodi quis, atque eaque fugit repellendus neque in expedita.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim hic, voluptates dolore tempore aliquam
+                    natus officiis, a eveniet ullam doloremque. Velit alias, delectus hic, quo sapiente cupiditate dolorum
+                    dolores eum. Commodi quis, atque eaque fugit repellendus neque in expedita.</p>
             </div>
             <div class="six__section-items">
                 <div class="six__section-item-wrap">
@@ -362,60 +409,88 @@
             <div class="seventh__section-block-wrap">
                 <div class="seventh__section-block">
                     <div class="seventh__section-block-photo"></div>
-                    <a href="#"><div class="seventh__section-block-text">сатиновые</div></a>
+                    <a href="#">
+                        <div class="seventh__section-block-text">сатиновые</div>
+                    </a>
                 </div>
                 <div class="seventh__section-block">
                     <div class="seventh__section-block-photo"></div>
-                    <a href="#"><div class="seventh__section-block-text">глянцевые</div></a>
+                    <a href="#">
+                        <div class="seventh__section-block-text">глянцевые</div>
+                    </a>
                 </div>
                 <div class="seventh__section-block">
                     <div class="seventh__section-block-photo"></div>
-                    <a href="#"><div class="seventh__section-block-text">матовые</div></a>
+                    <a href="#">
+                        <div class="seventh__section-block-text">матовые</div>
+                    </a>
                 </div>
                 <div class="seventh__section-block">
                     <div class="seventh__section-block-photo"></div>
-                    <a href="#"><div class="seventh__section-block-text">декоративные ПВХ</div></a>
+                    <a href="#">
+                        <div class="seventh__section-block-text">декоративные ПВХ</div>
+                    </a>
                 </div>
                 <div class="seventh__section-block">
                     <div class="seventh__section-block-photo"></div>
-                    <a href="#"><div class="seventh__section-block-text">звездное небо</div></a>
+                    <a href="#">
+                        <div class="seventh__section-block-text">звездное небо</div>
+                    </a>
                 </div>
                 <div class="seventh__section-block">
                     <div class="seventh__section-block-photo"></div>
-                    <a href="#"><div class="seventh__section-block-text">сатиновые</div></a>
+                    <a href="#">
+                        <div class="seventh__section-block-text">сатиновые</div>
+                    </a>
                 </div>
                 <div class="seventh__section-block">
                     <div class="seventh__section-block-photo"></div>
-                    <a href="#"><div class="seventh__section-block-text">сатиновые</div></a>
+                    <a href="#">
+                        <div class="seventh__section-block-text">сатиновые</div>
+                    </a>
                 </div>
                 <div class="seventh__section-block">
                     <div class="seventh__section-block-photo"></div>
-                    <a href="#"><div class="seventh__section-block-text">сатиновые</div></a>
+                    <a href="#">
+                        <div class="seventh__section-block-text">сатиновые</div>
+                    </a>
                 </div>
                 <div class="seventh__section-block">
                     <div class="seventh__section-block-photo"></div>
-                    <a href="#"><div class="seventh__section-block-text">сатиновые</div></a>
+                    <a href="#">
+                        <div class="seventh__section-block-text">сатиновые</div>
+                    </a>
                 </div>
                 <div class="seventh__section-block">
                     <div class="seventh__section-block-photo"></div>
-                    <a href="#"><div class="seventh__section-block-text">сатиновые</div></a>
+                    <a href="#">
+                        <div class="seventh__section-block-text">сатиновые</div>
+                    </a>
                 </div>
                 <div class="seventh__section-block">
                     <div class="seventh__section-block-photo"></div>
-                    <a href="#"><div class="seventh__section-block-text">сатиновые</div></a>
+                    <a href="#">
+                        <div class="seventh__section-block-text">сатиновые</div>
+                    </a>
                 </div>
                 <div class="seventh__section-block">
                     <div class="seventh__section-block-photo"></div>
-                    <a href="#"><div class="seventh__section-block-text">сатиновые</div></a>
+                    <a href="#">
+                        <div class="seventh__section-block-text">сатиновые</div>
+                    </a>
                 </div>
                 <div class="last_wrap">
                     <div class="seventh__section-block">
                         <div class="seventh__section-block-photo"></div>
-                        <a href="#"><div class="seventh__section-block-text">акустические</div></a>
+                        <a href="#">
+                            <div class="seventh__section-block-text">акустические</div>
+                        </a>
                     </div>
                     <div class="seventh__section-block">
                         <div class="seventh__section-block-photo"></div>
-                        <a href="#"><div class="seventh__section-block-text">резные</div></a>
+                        <a href="#">
+                            <div class="seventh__section-block-text">резные</div>
+                        </a>
                     </div>
                 </div>
             </div>
