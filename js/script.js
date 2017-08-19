@@ -43,11 +43,12 @@ $(function () {
     $('.menu').click(menuToggle);
     $('.menu_item').click(menuToggle);
 
-    /* $('.eighth__section-block-info-color-block_item').click('on', function(){
-        console.log($(this).attr('id'));
-        var id = $(this).attr('id');
-        console.log($('.' + id));
-        $('.' + id + ' .eighth__section-block-photo').css('background-image', 'url(../img/pic1.jpg)')
-    }); */
 
 });
+    
+    function changecolor(arg) {
+        var el = arg.parentElement.parentElement.parentElement.parentElement;
+        var name = arg.value;
+        var src = 'img/lamps/';
+        el.children[0].style.backgroundImage = 'url(' + src + name + '.jpg)';
+    };
