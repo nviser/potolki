@@ -420,11 +420,11 @@ header {
     .first__section .wrapper .first__section-block {
       /* border: 1px solid #c00; */
       width: 25%;
-      padding-top: 90px;
+      padding-top: 190px;
       padding-bottom: 30px;
       background-repeat: no-repeat;
       background-position: center 20px;
-      background-size: 60px;
+      background-size: 250px;
       text-align: center;
       font-size: 18px;
       font-family: "RobotoRegular", sans-serif; }
@@ -435,14 +435,13 @@ header {
         font-family: "RobotoLight", sans-serif;
         padding: 0 5px; }
       .first__section .wrapper .first__section-block:nth-child(1) {
-        background-image: url(../img/hand-shake.png);
-        background-position: center 35px; }
+        background-image: url(../img/shake.jpg); }
       .first__section .wrapper .first__section-block:nth-child(2) {
-        background-image: url(../img/gift.png); }
+        background-image: url(../img/discont.jpg); }
       .first__section .wrapper .first__section-block:nth-child(3) {
-        background-image: url(../img/low-cost.png); }
+        background-image: url(../img/cost.jpg); }
       .first__section .wrapper .first__section-block:nth-child(4) {
-        background-image: url(../img/nbook.png); }
+        background-image: url(../img/notebook.jpg); }
       .first__section .wrapper .first__section-block a {
         color: #000;
         text-decoration: none;
@@ -1307,7 +1306,8 @@ header {
     height: 235px; }
     .seventh__section .wrapper .seventh__section-block-wrap .seventh__section-block .seventh__section-block-text {
       height: 55px;
-      font-size: 20px; }
+      font-size: 20px;
+      color: #000; }
 
   .eighth__section .wrapper .eighth__section-block-wrap .eighth__section-block .eighth__section-block-info .eighth__section-block-info-header {
     font-size: 20px; }

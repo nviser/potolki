@@ -306,11 +306,11 @@ header {
         .first__section-block {
             /* border: 1px solid #c00; */
             width: 25%;
-            padding-top: 90px;
+            padding-top: 190px;
             padding-bottom: 30px;
             background-repeat: no-repeat;
             background-position: center 20px;
-            background-size: 60px;
+            background-size: 250px;
             text-align: center;
             font-size: 18px;
             font-family: "RobotoRegular", sans-serif;
@@ -322,17 +322,16 @@ header {
                 padding: 0 5px;
             }
             &:nth-child(1) {
-                background-image: url(../img/hand-shake.png);
-                background-position: center 35px;
+                background-image: url(../img/shake.jpg);
             }
             &:nth-child(2) {
-                background-image: url(../img/gift.png);
+                background-image: url(../img/discont.jpg);
             }
             &:nth-child(3) {
-                background-image: url(../img/low-cost.png);
+                background-image: url(../img/cost.jpg);
             }
             &:nth-child(4) {
-                background-image: url(../img/nbook.png);
+                background-image: url(../img/notebook.jpg);
             }
             a {
                 color: #000;
@@ -1393,6 +1392,7 @@ header {
         .seventh__section-block-text {
             height: 55px;
             font-size: 20px;
+            color: #000;
         }
     }
 
