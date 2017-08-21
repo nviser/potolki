@@ -319,11 +319,10 @@ header {
     display: none;
     padding: 10px 10px;
     text-transform: uppercase;
-    position: absolute;
+    position: fixed;
     width: 250px;
     right: 0;
-    z-index: 1;
-    /* transition: opasity 1s;  */ }
+    z-index: 1; }
   header .menu_expand.open {
     display: block;
     z-index: 2; }
