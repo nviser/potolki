@@ -338,13 +338,16 @@ header {
                 display: block;
             }
         }
-    } */ }
+    } */
+    /* &:hover {
+        ul {
+            display: inherit;
+        }
+    }   */ }
     header .menu_item.submenu {
       display: none; }
     header .menu_item ul {
       display: none; }
-    header .menu_item:hover ul {
-      display: inherit; }
     header .menu_item li {
       padding: 10px;
       font-family: "RobotoRegular", sans-serif;

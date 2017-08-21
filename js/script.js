@@ -30,6 +30,9 @@ $(function () {
     /* Menu toggle */
 
     function menuToggle() {
+        if($('.menu').hasClass('open')){
+            $('header .menu_item ul').css('display', 'none');
+        }
         $('.menu').toggleClass('open');
         $('.menu_expand').toggleClass('open'); 
     }
