@@ -190,11 +190,41 @@ header {
     }
     .menu_expand.open {
          display: block;  
+         z-index: 2;
     }
     .menu_item {
         padding: 10px;
         font-family: "RobotoRegular", sans-serif;
         text-align: center;
+        list-style-type: none;
+        /* &:nth-child(3) {
+            &:hover {
+                ul {
+                    display: block;
+                }
+            }
+        } */
+        &.submenu {
+            display: none; 
+        }
+          ul {
+            display: none;
+        }
+        &:hover {
+            ul {
+                display: inherit;
+            }
+        }  
+        li {
+            padding: 10px;
+            font-family: "RobotoRegular", sans-serif;
+            text-align: center;
+            list-style-type: none;
+            font-size: 12px;
+            &:first-child {
+                list-style-type: none;
+            }
+        }
     }
     .menu_item a {
         text-decoration: none;
@@ -1736,6 +1766,9 @@ header {
     header {
         padding: 0;
         margin: 0;
+        .header__logo {
+            margin-top: 40px;
+        }
         nav {
             display: none; 
         }
@@ -1747,8 +1780,36 @@ header {
             width: 100%;
             height: 40px;
             background: $blue;
+            background-image: url(../img/logo.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 60px;
+            position: fixed;
+            z-index: 3;
+            top: 0;
             .menu {
                 display: block; 
+            }
+            a {
+                width: 30px;
+                height: 30px;
+                background-image: url(../img/home.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+                left: 10px;
+                top: calc(50% - 15px);
+            }
+            button {
+                width: 30px;
+                height: 30px;
+                outline: none;
+                background-image: url(../img/phone.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+                right: 50px;
+                top: calc(50% - 15px);
             }
         }
     }

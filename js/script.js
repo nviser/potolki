@@ -1,27 +1,17 @@
 $(function () {
 
-    /*   $('body').click('on', function(e) {
-        if($('.ceil_types').hasClass('open')){
-            $('.ceil_types').removeClass('open');
-            alert($('.ceil_types').hasClass('open'));
-        } else {
-            alert('true');
-            console.log(e);
-        }
-    });   */
-
     $('header nav ul li:nth-child(3)').click(function() {
             $('.ceil_types').toggleClass('open');
     });
 
-    /*  $('.ceil_types').mouseout(function() {
-            $('.ceil_types').removeClass('open');
-    });  */
 
     $('header .ceil_types a .ceil_types-item').click('on', function() {
         $('.ceil_types').toggleClass('open');
     });
 
+    $('header .menu_item:nth-child(3)').click('on', function() {
+        $('header .menu_item ul').css('display', 'block');
+    });
 
 
 
@@ -41,11 +31,11 @@ $(function () {
 
     function menuToggle() {
         $('.menu').toggleClass('open');
-        $('.menu_expand').toggleClass('open');
+        $('.menu_expand').toggleClass('open'); 
     }
 
     $('.menu').click(menuToggle);
-    $('.menu_item').click(menuToggle);
+    /* $('.menu_item').click(menuToggle); */
 
 
 });
