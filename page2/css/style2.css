@@ -898,7 +898,10 @@ header {
       margin-right: 0; }
 
   .mySlides .slider-text {
-    margin-top: -18px; } }
+    margin-top: -18px; }
+
+  .ceil_types li a {
+    font-size: 1.4vw; } }
 @media screen and (max-width: 800px) {
   .wrapper {
     display: block; }
