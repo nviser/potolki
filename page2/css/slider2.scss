@@ -2,8 +2,30 @@
 	width: 100%;
 	position: relative;
 	margin: auto;
-	height: 400px;
+	height: 250px;
 	overflow: hidden;
+	padding-right: 1%;
+	box-sizing: border-box;
+	.action__section-arrow {
+		position: absolute;
+		background-image: url(../img/act-arrow.png);
+		background-repeat: no-repeat;
+		background-size: 98%; 
+		width: 50%;
+		height: 80px;
+		top: calc(50% - 33px);
+		right: -10px;
+		font-family: "RobotoLight", sans-serif;
+		padding-top: 2%;
+		text-align: right;
+		padding-right: 10px;
+		font-size: 24px;
+		z-index: 2;
+		span {
+			text-transform: uppercase;
+			font-family: "RobotoBold", sans-serif;
+		}
+	}
 }
 .prev, .next{
 	cursor: pointer;
@@ -29,8 +51,9 @@
 }
 
 .mySlides{
-	height: 400px;
+	height: 250px;
 	text-align: center;
+	position: relative; 
 	&:nth-child(2){
 		display: none;
 	}
@@ -38,7 +61,29 @@
 		display: none;
 	}
 	img {
-		height: 400px;
+		height: 250px;
+	}
+	.dots {
+		position: absolute;
+		bottom: 15px;
+		left: 35px;
+		text-align: center;
+		margin-top: 60px;
+	}
+	.slider-text {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-top: -13px;
+		z-index: 3;
+		font-family: "RobotoLight", sans-serif;
+		text-align: right;
+		font-size: 23px;
+		span {
+			text-transform: uppercase;
+			font-family: "RobotoBold", sans-serif;
+		}
+            
 	}
 }
 
@@ -55,14 +100,15 @@
 	height: 5px;
 	width: 15px;
 	margin: 0 2px;
-	background-color: $blue;
+	background-color: #fff;
 	display: inline-block;
 	transition: background-color 0.6s ease;	
-	transform: skewX(-15deg);
+	border: 1px solid  #fff;
+	box-sizing: border-box;
 }
 
 .active, .dot:hover{
-	background-color: $yellow;
+	background-color: transparent;
 }
 
 .fade{

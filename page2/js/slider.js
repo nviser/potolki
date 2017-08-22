@@ -39,7 +39,7 @@ function slideTime(n){
  showSlides(slideIndex += n);
  }
  
-/* setInterval(slideTime, 4000); */
+ setInterval(slideTime, 4000); 
 
 
 

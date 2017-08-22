@@ -466,7 +466,7 @@ header {
                     font-size: 24px;
                     span {
                         text-transform: uppercase;
-                    font-family: "RobotoBold", sans-serif;
+                        font-family: "RobotoBold", sans-serif;
 
                     }
                 }
@@ -594,7 +594,6 @@ header {
                             width: 90%;
                             margin: 0 auto;
                         }
-
                     }
                     .third__section-block-wrap {
                         .third__section-block-header, .third__section-block-text {
@@ -824,6 +823,12 @@ header {
     .wrapper .right .action__section .action__section-photo .action__section-arrow {
         font-size: 1.9vw;
     }
+    .mySlides .slider-text {
+        font-size: 1.9vw;
+    }
+    .slideshow-container .action__section-arrow {
+        right: -0.9vw;
+    }
 }
 
 @media screen and (max-width: 970px) {
@@ -832,6 +837,9 @@ header {
         &:nth-child(2n+1){
             margin-right: 0;
         }
+    }
+    .mySlides .slider-text {
+        margin-top: -18px;
     }
 }
 
@@ -869,6 +877,10 @@ header {
             }
         }
     } 
+    .mySlides .slider-text {
+        margin-top: -15px;
+        font-size: 2.2vw;
+    }
 }
 @media screen and (max-width: 720px) {
     .wrapper .right .photos__section .photos__section-wrap .photos__section-item {
@@ -896,6 +908,19 @@ header {
         }
 
     }
+    .mySlides .slider-text {
+        margin-top: -19px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .slideshow-container .action__section-arrow {
+        right: -1.6vw;
+        width: 70%;
+    }
+    .mySlides .slider-text {
+        font-size: 3vw;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -920,7 +945,33 @@ header {
             height: 30px;
         }
     }
+    .slideshow-container .action__section-arrow {
+        right: -2.6vw;
+        width: 90%;
+        top: calc(50% - 60px);
+    }
+    .mySlides {
+        height: 200px;
+        .slider-text {
+            font-size: 3.9vw;
+        }
+        img {
+            height: 200px;
+        }
+    }
+    
+    
 }
+@media screen and (max-width: 400px) {
+    .mySlides {
+        height: 200px;
+        .slider-text {
+            font-size: 3.7vw;
+            margin-top: -23px;
+        }
+    }
+}
+
 @media screen and (max-width: 320px) {
     .wrapper .right .photos__section .photos__section-wrap .photos__section-item {
         width: 100% !important;
@@ -1103,9 +1154,6 @@ header {
         }
     }
     
-    .slideshow-container {
-        height: 345px;
-    }
     .slider .slider__inner {
         .slider__inner-top-text {
             font-size: 20px;    
