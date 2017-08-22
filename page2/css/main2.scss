@@ -195,8 +195,10 @@ header {
         /* transition: opasity 1s;  */
     }
     .menu_expand.open {
-         display: block;  
-         z-index: 2;
+        display: block;  
+        z-index: 4;
+        max-height: 510px;
+        overflow: auto;
     }
     .menu_item {
         padding: 10px;

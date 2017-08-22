@@ -369,7 +369,9 @@ header {
     /* transition: opasity 1s;  */ }
   header .menu_expand.open {
     display: block;
-    z-index: 2; }
+    z-index: 4;
+    max-height: 510px;
+    overflow: auto; }
   header .menu_item {
     padding: 10px;
     font-family: "RobotoRegular", sans-serif;
